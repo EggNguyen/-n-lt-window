@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyCuaHangTraSua" Class="QuanLyCuaHangTraSuaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-MVNUEV2\SQLEXPRESS;Initial Catalog=QuanLyCuaHangTraSua;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="WindowsFormsApp1.Properties.Settings" SettingsPropertyName="QuanLyCuaHangTraSuaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NGUYENLIEU" Member="NGUYENLIEUs">
+    <Type Name="NGUYENLIEU">
+      <Column Name="NGUYENLIEU_MANL" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NGUYENLIEU_TEN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NGUYENLIEU_NGAYNHAP" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NGUYENLIEU_HANSD" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NGUYENLIEU_SOLUONGTON" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUYENLIEU_MOTA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NGUYENLIEU_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="NGUYENLIEU_MANCC" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Association Name="NHACUNGCAP_NGUYENLIEU" Member="NHACUNGCAP" ThisKey="NGUYENLIEU_MANCC" OtherKey="NHACUNGCAP_MANCC" Type="NHACUNGCAP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIET_HOADON" Member="CHITIET_HOADONs">
+    <Type Name="CHITIET_HOADON">
+      <Column Name="CHITIET_HOADON_MAHOADON" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CHITIET_HOADON_MATS" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CHITIET_HOADON_TENSP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CHITIET_HOADON_SIZE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CHITIET_HOADON_SOLUONG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CHITIET_HOADON_DONGIA" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="HOADON_CHITIET_HOADON" Member="HOADON" ThisKey="CHITIET_HOADON_MAHOADON" OtherKey="HOADON_MAHOADON" Type="HOADON" IsForeignKey="true" />
+      <Association Name="TRASUA_CHITIET_HOADON" Member="TRASUA" ThisKey="CHITIET_HOADON_MATS" OtherKey="TRASUA_MATS" Type="TRASUA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOADON" Member="HOADONs">
+    <Type Name="HOADON">
+      <Column Name="HOADON_MAHOADON" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOADON_NGAYLAP" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HOADON_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HOADON_KHACHTRA" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HOADON_THANHTIEN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HOADON_THOILAI" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HOADON_MAKH" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="HOADON_MANV" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="HOADON_PTTHANHTOAN" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DIEMTICHLUY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HOADON_CHITIET_HOADON" Member="CHITIET_HOADONs" ThisKey="HOADON_MAHOADON" OtherKey="CHITIET_HOADON_MAHOADON" Type="CHITIET_HOADON" />
+      <Association Name="KHACHHANG_HOADON" Member="KHACHHANG" ThisKey="HOADON_MAKH" OtherKey="KHACHHANG_MAKHACH" Type="KHACHHANG" IsForeignKey="true" />
+      <Association Name="NHANVIEN_HOADON" Member="NHANVIEN" ThisKey="HOADON_MANV" OtherKey="NHANVIEN_MANHANVIEN" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="KHACHHANG_MAKHACH" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KHACHHANG_HOTENDEM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KHACHHANG_TEN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KHACHANG_SODIENTHOAI" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="KHACHANG_NGAYSINH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KHACHHANG_DIACHI" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="KHACHHANG_GIOITINH" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="KHACHHANG_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="KHACHHANG_LOAIKH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="KHACHHANG_HOADON" Member="HOADONs" ThisKey="KHACHHANG_MAKHACH" OtherKey="HOADON_MAKH" Type="HOADON" />
+      <Association Name="KHACHHANG_THANHVIEN" Member="THANHVIEN" ThisKey="KHACHHANG_MAKHACH" OtherKey="THANHVIEN_MATV" Type="THANHVIEN" Cardinality="One" />
+      <Association Name="LOAIKH_KHACHHANG" Member="LOAIKH" ThisKey="KHACHHANG_LOAIKH" OtherKey="MALOAIKH" Type="LOAIKH" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIKH" Member="LOAIKHs">
+    <Type Name="LOAIKH">
+      <Column Name="MALOAIKH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENLOAIKH" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="LOAIKH_KHACHHANG" Member="KHACHHANGs" ThisKey="MALOAIKH" OtherKey="KHACHHANG_LOAIKH" Type="KHACHHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHACUNGCAP" Member="NHACUNGCAPs">
+    <Type Name="NHACUNGCAP">
+      <Column Name="NHACUNGCAP_MANCC" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NHACUNGCAP_TEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_SDT" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_DIACHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="MANHANVIEN" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Association Name="NHACUNGCAP_NGUYENLIEU" Member="NGUYENLIEUs" ThisKey="NHACUNGCAP_MANCC" OtherKey="NGUYENLIEU_MANCC" Type="NGUYENLIEU" />
+      <Association Name="NHANVIEN_NHACUNGCAP" Member="NHANVIEN" ThisKey="MANHANVIEN" OtherKey="NHANVIEN_MANHANVIEN" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="NHANVIEN_MANHANVIEN" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NHANVIEN_HOVATENDEM" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NHANVIEN_TEN" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NHANVIEN_GIOITINH" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="NHANVIEN_NTNS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NHANVIEN_PHONE" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="NHANVIEN_DIACHI" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NHANVIEN_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TAIKHOAN_MANHANVIEN" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Association Name="NHANVIEN_HOADON" Member="HOADONs" ThisKey="NHANVIEN_MANHANVIEN" OtherKey="HOADON_MANV" Type="HOADON" />
+      <Association Name="NHANVIEN_NHACUNGCAP" Member="NHACUNGCAPs" ThisKey="NHANVIEN_MANHANVIEN" OtherKey="MANHANVIEN" Type="NHACUNGCAP" />
+      <Association Name="TAIKHOAN_NHANVIEN" Member="TAIKHOAN" ThisKey="TAIKHOAN_MANHANVIEN" OtherKey="TAIKHOAN_MANHANVIEN" Type="TAIKHOAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAIKHOAN" Member="TAIKHOANs">
+    <Type Name="TAIKHOAN">
+      <Column Name="TAIKHOAN_MANHANVIEN" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TAIKHOAN_MATKHAU" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="TAIKOHAN_LOAITAIKHOAN" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TAIKHOAN_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="TAIKHOAN_NHANVIEN" Member="NHANVIENs" ThisKey="TAIKHOAN_MANHANVIEN" OtherKey="TAIKHOAN_MANHANVIEN" Type="NHANVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THANHVIEN" Member="THANHVIENs">
+    <Type Name="THANHVIEN">
+      <Column Name="THANHVIEN_MATV" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DIEMTICHLUY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="THANHVIEN_HOTEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="THANHVIEN_SDT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="THANHVIEN_NGAYGIANHAP" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="THANHVIEN_EMAIL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="THANHVIEN_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="KHACHHANG_THANHVIEN" Member="KHACHHANG" ThisKey="THANHVIEN_MATV" OtherKey="KHACHHANG_MAKHACH" Type="KHACHHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TRASUA" Member="TRASUAs">
+    <Type Name="TRASUA">
+      <Column Name="TRASUA_MATS" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TRASUA_TEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_GIA" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_NGAYTAO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_MOTA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TRASUA_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="TRASUA_CHITIET_HOADON" Member="CHITIET_HOADONs" ThisKey="TRASUA_MATS" OtherKey="CHITIET_HOADON_MATS" Type="CHITIET_HOADON" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_TimMaSP" Method="SP_TimMaSP">
+    <Parameter Name="ma" Type="System.String" DbType="VarChar(6)" />
+    <ElementType Name="SP_TimMaSPResult">
+      <Column Name="TRASUA_MATS" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_TEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_GIA" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_NGAYTAO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_MOTA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TRASUA_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_DangNhap" Method="SP_DangNhap">
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(6)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(255)" />
+    <ElementType Name="SP_DangNhapResult">
+      <Column Name="code" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NHANVIEN_HOVATENDEM" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NHANVIEN_TEN" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NHANVIEN_LOAINV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LayDSNCC" Method="SP_LayDSNCC">
+    <ElementType Name="SP_LayDSNCCResult">
+      <Column Name="NHACUNGCAP_MANCC" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="NHACUNGCAP_TEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_SDT" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_DIACHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="NHACUNGCAP_MATHANG" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LayDSSP" Method="SP_LayDSSP">
+    <ElementType Name="SP_LayDSSPResult">
+      <Column Name="TRASUA_MATS" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_TEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_GIA" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_NGAYTAO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRASUA_MOTA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TRASUA_TRANGTHAI" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_KiemTraMatHang" Method="SP_KiemTraMatHang">
+    <Parameter Name="tenncc" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="mathang" Type="System.String" DbType="NVarChar(255)" />
+    <ElementType Name="SP_KiemTraMatHangResult">
+      <Column Name="code" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BanHang" Method="SP_BanHang">
+    <Parameter Name="tentrasua" Type="System.String" DbType="NVarChar(255)" />
+    <ElementType Name="SP_BanHangResult">
+      <Column Name="TRASUA_GIA" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_HienThiChiTietHoaDon" Method="SP_HienThiChiTietHoaDon">
+    <Parameter Name="mahoadon" Type="System.String" DbType="VarChar(6)" />
+    <ElementType Name="SP_HienThiChiTietHoaDonResult">
+      <Column Name="CHITIET_HOADON_TENSP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CHITIET_HOADON_SOLUONG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CHITIET_HOADON_DONGIA" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="total" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
