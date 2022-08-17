@@ -1,0 +1,11 @@
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\bin\Debug\DTO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\bin\Debug\DTO.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\bin\Debug\EntityFramework.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\bin\Debug\EntityFramework.xml
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\obj\Debug\DTO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\obj\Debug\DTO.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
