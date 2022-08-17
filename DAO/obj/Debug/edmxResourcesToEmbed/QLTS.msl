@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLyCuaHangTraSuaModelStoreContainer" CdmEntityContainer="QuanLyCuaHangTraSuaEntities">
+    <FunctionImportMapping FunctionImportName="SP_LayDSSP" FunctionName="QuanLyCuaHangTraSuaModel.Store.SP_LayDSSP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyCuaHangTraSuaModel.SP_LayDSSP_Result1">
+          <ScalarProperty Name="TRASUA_MATS" ColumnName="TRASUA_MATS" />
+          <ScalarProperty Name="TRASUA_TEN" ColumnName="TRASUA_TEN" />
+          <ScalarProperty Name="TRASUA_GIA" ColumnName="TRASUA_GIA" />
+          <ScalarProperty Name="TRASUA_NGAYTAO" ColumnName="TRASUA_NGAYTAO" />
+          <ScalarProperty Name="TRASUA_MOTA" ColumnName="TRASUA_MOTA" />
+          <ScalarProperty Name="TRASUA_TRANGTHAI" ColumnName="TRASUA_TRANGTHAI" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CHITIET_HOADON">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.CHITIET_HOADON">
+        <MappingFragment StoreEntitySet="CHITIET_HOADON">
+          <ScalarProperty Name="MACTHD" ColumnName="MACTHD" />
+          <ScalarProperty Name="CHITIET_HOADON_DONGIA" ColumnName="CHITIET_HOADON_DONGIA" />
+          <ScalarProperty Name="CHITIET_HOADON_SOLUONG" ColumnName="CHITIET_HOADON_SOLUONG" />
+          <ScalarProperty Name="CHITIET_HOADON_TENSP" ColumnName="CHITIET_HOADON_TENSP" />
+          <ScalarProperty Name="CHITIET_HOADON_MATS" ColumnName="CHITIET_HOADON_MATS" />
+          <ScalarProperty Name="CHITIET_HOADON_MAHOADON" ColumnName="CHITIET_HOADON_MAHOADON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.HOADON">
+        <MappingFragment StoreEntitySet="HOADON">
+          <ScalarProperty Name="HOADON_MANV" ColumnName="HOADON_MANV" />
+          <ScalarProperty Name="HOADON_MAKH" ColumnName="HOADON_MAKH" />
+          <ScalarProperty Name="HOADON_THOILAI" ColumnName="HOADON_THOILAI" />
+          <ScalarProperty Name="HOADON_THANHTIEN" ColumnName="HOADON_THANHTIEN" />
+          <ScalarProperty Name="HOADON_KHACHTRA" ColumnName="HOADON_KHACHTRA" />
+          <ScalarProperty Name="HOADON_TRANGTHAI" ColumnName="HOADON_TRANGTHAI" />
+          <ScalarProperty Name="HOADON_NGAYLAP" ColumnName="HOADON_NGAYLAP" />
+          <ScalarProperty Name="HOADON_MAHOADON" ColumnName="HOADON_MAHOADON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="KHACHHANG_LOAIKH" ColumnName="KHACHHANG_LOAIKH" />
+          <ScalarProperty Name="KHACHHANG_TRANGTHAI" ColumnName="KHACHHANG_TRANGTHAI" />
+          <ScalarProperty Name="KHACHHANG_GIOITINH" ColumnName="KHACHHANG_GIOITINH" />
+          <ScalarProperty Name="KHACHHANG_DIACHI" ColumnName="KHACHHANG_DIACHI" />
+          <ScalarProperty Name="KHACHANG_NGAYSINH" ColumnName="KHACHANG_NGAYSINH" />
+          <ScalarProperty Name="KHACHANG_SODIENTHOAI" ColumnName="KHACHANG_SODIENTHOAI" />
+          <ScalarProperty Name="KHACHHANG_TEN" ColumnName="KHACHHANG_TEN" />
+          <ScalarProperty Name="KHACHHANG_HOTENDEM" ColumnName="KHACHHANG_HOTENDEM" />
+          <ScalarProperty Name="KHACHHANG_MAKHACH" ColumnName="KHACHHANG_MAKHACH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAIKHs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.LOAIKH">
+        <MappingFragment StoreEntitySet="LOAIKH">
+          <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
+          <ScalarProperty Name="TENLOAIKH" ColumnName="TENLOAIKH" />
+          <ScalarProperty Name="MALOAIKH" ColumnName="MALOAIKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAITAIKHOANs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.LOAITAIKHOAN">
+        <MappingFragment StoreEntitySet="LOAITAIKHOAN">
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TENLOAITK" ColumnName="TENLOAITK" />
+          <ScalarProperty Name="MALOAI" ColumnName="MALOAI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGUYENLIEUx">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.NGUYENLIEU">
+        <MappingFragment StoreEntitySet="NGUYENLIEU">
+          <ScalarProperty Name="NGUYENLIEU_TENNCC" ColumnName="NGUYENLIEU_TENNCC" />
+          <ScalarProperty Name="NGUYENLIEU_TRANGTHAI" ColumnName="NGUYENLIEU_TRANGTHAI" />
+          <ScalarProperty Name="NGUYENLIEU_MOTA" ColumnName="NGUYENLIEU_MOTA" />
+          <ScalarProperty Name="NGUYENLIEU_SOLUONGTON" ColumnName="NGUYENLIEU_SOLUONGTON" />
+          <ScalarProperty Name="NGUYENLIEU_HANSD" ColumnName="NGUYENLIEU_HANSD" />
+          <ScalarProperty Name="NGUYENLIEU_NGAYNHAP" ColumnName="NGUYENLIEU_NGAYNHAP" />
+          <ScalarProperty Name="NGUYENLIEU_TEN" ColumnName="NGUYENLIEU_TEN" />
+          <ScalarProperty Name="NGUYENLIEU_MANL" ColumnName="NGUYENLIEU_MANL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHACUNGCAPs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.NHACUNGCAP">
+        <MappingFragment StoreEntitySet="NHACUNGCAP">
+          <ScalarProperty Name="MANHANVIEN" ColumnName="MANHANVIEN" />
+          <ScalarProperty Name="NHACUNGCAP_MATHANG" ColumnName="NHACUNGCAP_MATHANG" />
+          <ScalarProperty Name="NHACUNGCAP_TRANGTHAI" ColumnName="NHACUNGCAP_TRANGTHAI" />
+          <ScalarProperty Name="NHACUNGCAP_DIACHI" ColumnName="NHACUNGCAP_DIACHI" />
+          <ScalarProperty Name="NHACUNGCAP_SDT" ColumnName="NHACUNGCAP_SDT" />
+          <ScalarProperty Name="NHACUNGCAP_TEN" ColumnName="NHACUNGCAP_TEN" />
+          <ScalarProperty Name="NHACUNGCAP_MANCC" ColumnName="NHACUNGCAP_MANCC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="NHANVIEN_LOAINV" ColumnName="NHANVIEN_LOAINV" />
+          <ScalarProperty Name="NHANVIEN_EMAIL" ColumnName="NHANVIEN_EMAIL" />
+          <ScalarProperty Name="NHANVIEN_TRANGTHAI" ColumnName="NHANVIEN_TRANGTHAI" />
+          <ScalarProperty Name="NHANVIEN_DIACHI" ColumnName="NHANVIEN_DIACHI" />
+          <ScalarProperty Name="NHANVIEN_PHONE" ColumnName="NHANVIEN_PHONE" />
+          <ScalarProperty Name="NHANVIEN_NTNS" ColumnName="NHANVIEN_NTNS" />
+          <ScalarProperty Name="NHANVIEN_GIOITINH" ColumnName="NHANVIEN_GIOITINH" />
+          <ScalarProperty Name="NHANVIEN_TEN" ColumnName="NHANVIEN_TEN" />
+          <ScalarProperty Name="NHANVIEN_HOVATENDEM" ColumnName="NHANVIEN_HOVATENDEM" />
+          <ScalarProperty Name="NHANVIEN_MANHANVIEN" ColumnName="NHANVIEN_MANHANVIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="TAIKHOAN_GHICHU" ColumnName="TAIKHOAN_GHICHU" />
+          <ScalarProperty Name="TAIKHOAN_NGAYTAO" ColumnName="TAIKHOAN_NGAYTAO" />
+          <ScalarProperty Name="TAIKHOAN_TRANGTHAI" ColumnName="TAIKHOAN_TRANGTHAI" />
+          <ScalarProperty Name="TAIKHOAN_MALOAI" ColumnName="TAIKHOAN_MALOAI" />
+          <ScalarProperty Name="TAIKHOAN_MATKHAU" ColumnName="TAIKHOAN_MATKHAU" />
+          <ScalarProperty Name="TAIKHOAN_MANHANVIEN" ColumnName="TAIKHOAN_MANHANVIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THANHVIENs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.THANHVIEN">
+        <MappingFragment StoreEntitySet="THANHVIEN">
+          <ScalarProperty Name="THANHVIEN_TRANGTHAI" ColumnName="THANHVIEN_TRANGTHAI" />
+          <ScalarProperty Name="THANHVIEN_EMAIL" ColumnName="THANHVIEN_EMAIL" />
+          <ScalarProperty Name="THANHVIEN_NGAYGIANHAP" ColumnName="THANHVIEN_NGAYGIANHAP" />
+          <ScalarProperty Name="THANHVIEN_SDT" ColumnName="THANHVIEN_SDT" />
+          <ScalarProperty Name="THANHVIEN_HOTEN" ColumnName="THANHVIEN_HOTEN" />
+          <ScalarProperty Name="DIEMTICHLUY" ColumnName="DIEMTICHLUY" />
+          <ScalarProperty Name="THANHVIEN_MATV" ColumnName="THANHVIEN_MATV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRASUAs">
+      <EntityTypeMapping TypeName="QuanLyCuaHangTraSuaModel.TRASUA">
+        <MappingFragment StoreEntitySet="TRASUA">
+          <ScalarProperty Name="TRASUA_TRANGTHAI" ColumnName="TRASUA_TRANGTHAI" />
+          <ScalarProperty Name="TRASUA_MOTA" ColumnName="TRASUA_MOTA" />
+          <ScalarProperty Name="TRASUA_NGAYTAO" ColumnName="TRASUA_NGAYTAO" />
+          <ScalarProperty Name="TRASUA_GIA" ColumnName="TRASUA_GIA" />
+          <ScalarProperty Name="TRASUA_TEN" ColumnName="TRASUA_TEN" />
+          <ScalarProperty Name="TRASUA_MATS" ColumnName="TRASUA_MATS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

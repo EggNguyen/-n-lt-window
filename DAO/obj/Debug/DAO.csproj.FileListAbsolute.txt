@@ -1,0 +1,14 @@
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\DAO.dll.config
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\DAO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\DAO.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\DTO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\EntityFramework.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\EntityFramework.SqlServer.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\DTO.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\EntityFramework.xml
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\bin\Debug\EntityFramework.SqlServer.xml
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\obj\Debug\DAO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\DAO\obj\Debug\DAO.pdb

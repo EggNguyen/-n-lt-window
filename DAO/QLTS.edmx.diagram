@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df73f0392c754d919baf0cd03befb860" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.CHITIET_HOADON" Width="1.5" PointX="8.25" PointY="6.125" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.HOADON" Width="1.5" PointX="6" PointY="5.875" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.KHACHHANG" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.LOAIKH" Width="1.5" PointX="1.5" PointY="3" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.LOAITAIKHOAN" Width="1.5" PointX="0.75" PointY="10.5" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.NGUYENLIEU" Width="1.5" PointX="8.75" PointY="2" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.NHACUNGCAP" Width="1.5" PointX="3" PointY="13.375" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="5.625" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.sysdiagram" Width="1.5" PointX="2.75" PointY="10" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.TAIKHOAN" Width="1.5" PointX="3" PointY="6.125" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.THANHVIEN" Width="1.5" PointX="6" PointY="10.75" />
+        <EntityTypeShape EntityType="QuanLyCuaHangTraSuaModel.TRASUA" Width="1.5" PointX="6" PointY="2.25" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__CHITIET_H__CHITI__4316F928" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK_MACTHD" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__HOADON__HOADON_M__3E52440B" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__HOADON__HOADON_M__3F466844" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__KHACHHANG__KHACH__36B12243" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__THANHVIEN__THANH__3A81B327" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__TAIKHOAN__TAIKHO__339FAB6E" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK_NCC" />
+        <AssociationConnector Association="QuanLyCuaHangTraSuaModel.FK__TAIKHOAN__TAIKHO__3864608B" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
