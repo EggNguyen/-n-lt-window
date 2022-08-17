@@ -1,0 +1,16 @@
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\BUS.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\BUS.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\DAO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\DTO.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\EntityFramework.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\EntityFramework.SqlServer.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\DAO.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\DAO.dll.config
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\DTO.pdb
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\EntityFramework.xml
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\bin\Debug\EntityFramework.SqlServer.xml
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\obj\Debug\BUS.dll
+D:\jimmyPersonalShit\visualstudio\workspace\WINFORM\DO AN\source\Source\BUS\obj\Debug\BUS.pdb
